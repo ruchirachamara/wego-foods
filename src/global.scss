@@ -1,0 +1,89 @@
+$default-pure-white-color: #FFFFFF;
+$default-white-color: #f7f8fa;
+$default-bg-color: #f7f8fa;
+$common-login-form-bg-color: #556EE640;
+$default-header-text-color: #556EE6;
+$input-text-color: #CED4DA;
+$label-text-color: #495057;
+$checkbox-border-common-color: #ADB5BD;
+$default-a-color: #74788D;
+$default-btn-color: #ffc700;
+$default-btn-text-color: #767d85;
+
+$spacing-Z: 0;
+$spacing-XSHH: .5rem;
+$spacing-XSH: .75rem;
+$spacing-XS: 1rem;
+$spacing-XSS: 1.5rem;
+$spacing-S: 2rem;
+$spacing-M: 3rem;
+$spacing-L: 4rem;
+$spacing-XL: 5rem;
+$spacing-XXL: 6rem;
+
+$extra-small-font-size: 12px;
+$default-font-size: 14px;
+$large-font-size: 15px;
+$X-large-size: 16px;
+$XX-large-size: 17px;
+$XXX-large-size: 18px;
+$XL-large-size: 20px;
+$btn-title-font-size: 13px;
+$title-font-size: 24px;
+$extra-large-text-size: 32px;
+
+$font-normal: normal;
+$font-bold: bold;
+$font-semi-bold-lighter: 400;
+$font-semi-bold-light: 500;
+$font-semi-bold: 600;
+
+* {
+  margin:0;
+  padding:0;
+  border: 0 none;
+  position: relative;
+}
+
+html {
+  font-size: $default-font-size;  
+}
+
+html, body {
+  height: 100%;
+  min-height:100%;
+  margin: 0;
+  padding: 0;
+  background: $default-bg-color !important;
+  font-family: 'Poppins', sans-serif;
+}
+
+input, button { padding: 0 }
+
+h1, h2, h3, h4, h5, h6, p { 
+  margin: 0;
+}
+
+a {
+  font-size: $default-font-size;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.boldedText { 
+  font-weight: $font-bold !important;
+  font-size: $large-font-size !important;
+}
+
+.halfWidth {
+  width: 50%;
+}
+
+.fullWidth {
+  width: 100% !important;
+  max-width: 100%;
+}
+
+.text__center {
+  text-align: center;
+}

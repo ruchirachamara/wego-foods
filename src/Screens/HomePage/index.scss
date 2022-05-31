@@ -1,0 +1,119 @@
+@import '../../global.scss';
+
+.site-layout-content {
+    padding: 24px;
+    background: $default-white-color;
+    max-width: 975px;
+    min-width: 975px;
+
+    .ant-radio-button-wrapper {
+        &:first-child {
+            border-top-left-radius: 10px;
+            border-bottom-left-radius: 10px;
+        }
+        &:last-child {
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 10px;
+        }
+    }
+}
+.ant-radio-button-wrapper-checked {
+    background: $default-btn-color !important;
+    border-color: $default-btn-color !important;
+}
+.ant-radio-button-wrapper {
+    border-color: $default-btn-color !important;     
+    color: $default-btn-text-color !important;  
+    font-weight: $font-semi-bold-light;  
+}
+.ant-radio-button-wrapper:not(:first-child)::before {
+    background: $default-btn-color !important;
+}
+.ant-card-body {
+    padding: 0;
+}
+.food-items-cover-image {
+    width: 400px;
+    height: 250px; 
+    border-bottom-left-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;  
+}
+.food-items-name {
+    height: 150px;
+    padding-top: 20px;
+    padding-left: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.site-layout-content .ant-col {
+    margin-bottom: 15px;
+}
+.food-item-promotion-icon-wrapper {
+    max-width: 35px;
+    height: 25px;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.default-button {
+    border-color: $default-btn-color !important;
+    border-radius: 10px;
+
+    &:hover {
+        background: $default-btn-color !important;
+        color: $default-pure-white-color;
+    }
+    &:focus {
+        background: $default-btn-color !important;
+        color: $default-pure-white-color;
+    }
+}
+.default-button-reverse {
+    border-color: $default-btn-color !important;
+    background: $default-btn-color !important;
+    border-radius: 10px;
+
+    &:hover {
+        background: $default-pure-white-color !important;
+        color: $default-btn-color;
+    }
+    &:focus {
+        background: $default-pure-white-color !important;
+        color: $default-btn-color;
+    }
+}
+
+.top-to-btm{
+    position: fixed;
+    bottom: 25px;
+    right: 20px;
+}
+@keyframes movebtn {
+    0%{
+      transform: translateY(0px);
+    }
+    25%{
+      transform: translateY(20px);
+    }
+    50%{
+      transform: translateY(0px);
+    }
+    75%{
+      transform: translateY(-20px);
+    }
+    100%{
+      transform: translateY(0px);
+    }
+}
+
+@media screen and (min-width: 375px) {
+    .food-items-cover-image {
+        width: 100%;
+    }
+    .site-layout-content {
+        min-width: 375px;
+    }
+}
